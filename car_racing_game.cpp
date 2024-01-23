@@ -101,9 +101,9 @@ void gameover(){
     system("cls");  
     cout<<endl;  
     cout<<"\t\t--------------------------"<<endl;  
-    cout<<"\t\t-------- Game Over -------"<<endl;  
+    cout<<"\t\t-------- Konec hry -------"<<endl;  
     cout<<"\t\t--------------------------"<<endl<<endl;  
-    cout<<"\t\tPress any key to go back to menu.";  
+    cout<<"\t\tStiskni cokoliv pro vrácení se do menu";  
     getch();  
 }  
 void updateScore(){  
@@ -113,13 +113,13 @@ void updateScore(){
 void instructions(){  
       
     system("cls");  
-    cout<<"Instructions";  
+    cout<<"Instrukce";  
     cout<<"\n----------------";  
-    cout<<"\n Avoid Cars by moving left or right. ";  
-    cout<<"\n\n Press 'a' to move left";  
-    cout<<"\n Press 'd' to move right";  
-    cout<<"\n Press 'escape' to exit";  
-    cout<<"\n\nPress any key to go back to menu";  
+    cout<<"\n Vyhnout se autům doprava nebo doleva";  
+    cout<<"\n\n Použij 'A' pro pohyb doleva";  
+    cout<<"\n Použij 'D' pro pohyb doprava";  
+    cout<<"\n Použij 'ESC' pro ukončení hry";  
+    cout<<"\n\nStiskni cokoliv pro vrácení se do menu";  
     getch();  
 }  
   
@@ -136,13 +136,13 @@ void play(){
     genEnemy(0);  
     genEnemy(1);  
       
-    gotoxy(WIN_WIDTH + 7, 2);cout<<"Car Game";  
+    gotoxy(WIN_WIDTH + 7, 2);cout<<"Závodní hra";  
     gotoxy(WIN_WIDTH + 6, 4);cout<<"----------";  
     gotoxy(WIN_WIDTH + 6, 6);cout<<"----------";  
-    gotoxy(WIN_WIDTH + 7, 12);cout<<"Control ";  
+    gotoxy(WIN_WIDTH + 7, 12);cout<<"Ovládání ";  
     gotoxy(WIN_WIDTH + 7, 13);cout<<"-------- ";  
-    gotoxy(WIN_WIDTH + 2, 14);cout<<" A Key - Left";  
-    gotoxy(WIN_WIDTH + 2, 15);cout<<" D Key - Right";   
+    gotoxy(WIN_WIDTH + 2, 14);cout<<" A Key - Doleva";  
+    gotoxy(WIN_WIDTH + 2, 15);cout<<" D Key - Doprava";   
       
     gotoxy(18, 5);cout<<"Press any key to start";  
     getch();  
@@ -207,12 +207,12 @@ int main()
     do{  
         system("cls");  
         gotoxy(10,5); cout<<" -------------------------- ";   
-        gotoxy(10,6); cout<<" |        Car Game        | ";   
+        gotoxy(10,6); cout<<" |        Závodní hra       | ";   
         gotoxy(10,7); cout<<" --------------------------";  
-        gotoxy(10,9); cout<<"1. Start Game";  
-        gotoxy(10,10); cout<<"2. Instructions";      
-        gotoxy(10,11); cout<<"3. Quit";  
-        gotoxy(10,13); cout<<"Select option: ";  
+        gotoxy(10,9); cout<<"1. Spustit hru";  
+        gotoxy(10,10); cout<<"2. Instrukce";      
+        gotoxy(10,11); cout<<"3. Odejít";  
+        gotoxy(10,13); cout<<"Vyber z možností: ";  
         char op = getche();  
           
         if( op=='1') play();  
