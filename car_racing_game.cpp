@@ -100,9 +100,7 @@ int collision(){
 void gameover(){  
     system("cls");  
     cout<<endl;  
-    cout<<"\t\t--------------------------"<<endl;  
     cout<<"\t\t-------- Konec hry -------"<<endl;  
-    cout<<"\t\t--------------------------"<<endl<<endl;  
     cout<<"\t\tStiskni cokoliv pro vrácení se do menu";  
     getch();  
 }  
@@ -136,8 +134,7 @@ void play(){
     genEnemy(0);  
     genEnemy(1);  
       
-    gotoxy(WIN_WIDTH + 7, 2);cout<<"Závodní hra";  
-    gotoxy(WIN_WIDTH + 6, 4);cout<<"----------";  
+    gotoxy(WIN_WIDTH + 7, 2);cout<<"Závodní hra";   
     gotoxy(WIN_WIDTH + 6, 6);cout<<"----------";  
     gotoxy(WIN_WIDTH + 7, 12);cout<<"Ovládání ";  
     gotoxy(WIN_WIDTH + 7, 13);cout<<"-------- ";  
