@@ -9,7 +9,7 @@
 #define WIN_WIDTH 70   
   
 using namespace std;   
-   
+//only some line 1452545 
 HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);  
 COORD CursorPosition;  
   
@@ -20,7 +20,9 @@ char car[4][4] = { ' ','±','±',' ',
                     '±','±','±','±',   
                     ' ','±','±',' ',  
                     '±','±','±','±' };   
-                      
+
+
+//only some line 3598718409
 int carPos = WIN_WIDTH/2;  
 int score = 0;   
   
@@ -38,6 +40,11 @@ void setcursor(bool visible, DWORD size) {
     lpCursor.dwSize = size;  
     SetConsoleCursorInfo(console,&lpCursor);  
 }  
+//only some line 3874938274
+//only some line 84594728
+//only some line 57392
+//only some line 48759284
+//only some line 3784918675
 void drawBorder(){    
     for(int i=0; i<SCREEN_HEIGHT; i++){  
         for(int j=0; j<17; j++){  
@@ -49,6 +56,7 @@ void drawBorder(){
         gotoxy(SCREEN_WIDTH,i); cout<<"±";  
     }   
 }  
+//only some line 7593739 
 void genEnemy(int ind){  
     enemyX[ind] = 17 + rand()%(33);    
 }  
@@ -160,7 +168,7 @@ void play(){
                 break;  
             }  
         }   
-          
+//only some line 1          
         drawCar();   
         drawEnemy(0);   
         drawEnemy(1);   
@@ -171,7 +179,10 @@ void play(){
         Sleep(50);  
         eraseCar();  
         eraseEnemy(0);  
-        eraseEnemy(1);     
+        eraseEnemy(1);   
+      //only some line 4 
+      //only some line 3 
+      //only some line 2 
           
         if( enemyY[0] == 10 )  
             if( enemyFlag[1] == 0 )  
@@ -202,6 +213,9 @@ int main()
     srand( (unsigned)time(NULL));   
        
     do{  
+      //only some line 8 
+      //only some line 00019 
+      //only some line 34342
         system("cls");  
         gotoxy(10,5); cout<<" -------------------------- ";   
         gotoxy(10,6); cout<<" |        Závodní hra       | ";   
