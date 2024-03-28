@@ -40,10 +40,7 @@ void setcursor(bool visible, DWORD size) {
     lpCursor.dwSize = size;  
     SetConsoleCursorInfo(console,&lpCursor);  
 }  
-//only some line 3874938274
-//only some line 84594728
-//only some line 57392
-//only some line 48759284
+
 //only some line 3784918675
 void drawBorder(){    
     for(int i=0; i<SCREEN_HEIGHT; i++){  
@@ -180,9 +177,9 @@ void play(){
         eraseCar();  
         eraseEnemy(0);  
         eraseEnemy(1);   
-      //only some line 4 
-      //only some line 3 
-      //only some line 2 
+      //only some line 4 8492U
+      //only some line 3 salkfjwonidsaf
+      //only some line 2 awoeifpqpcinid
           
         if( enemyY[0] == 10 )  
             if( enemyFlag[1] == 0 )  
@@ -213,9 +210,7 @@ int main()
     srand( (unsigned)time(NULL));   
        
     do{  
-      //only some line 8 
-      //only some line 00019 
-      //only some line 34342
+      //only some line 34342weafowjf
         system("cls");  
         gotoxy(10,5); cout<<" -------------------------- ";   
         gotoxy(10,6); cout<<" |        Závodní hra       | ";   
