@@ -9,7 +9,6 @@
 #define WIN_WIDTH 70   
   
 using namespace std;   
-//only some line 1452545 
 HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);  
 COORD CursorPosition;  
   
@@ -22,7 +21,6 @@ char car[4][4] = { ' ','±','±',' ',
                     '±','±','±','±' };   
 
 
-//only some line 3598718409
 int carPos = WIN_WIDTH/2;  
 int score = 0;   
   
@@ -42,6 +40,7 @@ void setcursor(bool visible, DWORD size) {
 }  
 
 //only some line 3784918675
+//only some line 1452545 
 void drawBorder(){    
     for(int i=0; i<SCREEN_HEIGHT; i++){  
         for(int j=0; j<17; j++){  
@@ -78,7 +77,7 @@ void resetEnemy(int ind){
     enemyY[ind] = 1;  
     genEnemy(ind);  
 }  
-  
+//only some line 1452545 
 void drawCar(){  
     for(int i=0; i<4; i++){  
         for(int j=0; j<4; j++){  
@@ -125,7 +124,7 @@ void instructions(){
     cout<<"\n\nStiskni cokoliv pro vrácení se do menu";  
     getch();  
 }  
-  
+//only some line 1452545 
 void play(){  
     carPos = -1 + WIN_WIDTH/2;  
     score = 0;  
@@ -165,7 +164,7 @@ void play(){
                 break;  
             }  
         }   
-//only some line 1          
+        
         drawCar();   
         drawEnemy(0);   
         drawEnemy(1);   
@@ -210,7 +209,6 @@ int main()
     srand( (unsigned)time(NULL));   
        
     do{  
-      //only some line 34342weafowjf
         system("cls");  
         gotoxy(10,5); cout<<" -------------------------- ";   
         gotoxy(10,6); cout<<" |        Závodní hra       | ";   
