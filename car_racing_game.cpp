@@ -39,8 +39,7 @@ void setcursor(bool visible, DWORD size) {
     SetConsoleCursorInfo(console,&lpCursor);  
 }  
 
-//only some line 3784918675
-//only some line 1452545 
+//only some line 145254epooije5 
 void drawBorder(){    
     for(int i=0; i<SCREEN_HEIGHT; i++){  
         for(int j=0; j<17; j++){  
@@ -77,7 +76,7 @@ void resetEnemy(int ind){
     enemyY[ind] = 1;  
     genEnemy(ind);  
 }  
-//only some line 1452545 
+//only some line 1452545dfwef 
 void drawCar(){  
     for(int i=0; i<4; i++){  
         for(int j=0; j<4; j++){  
@@ -124,7 +123,6 @@ void instructions(){
     cout<<"\n\nStiskni cokoliv pro vrácení se do menu";  
     getch();  
 }  
-//only some line 1452545 
 void play(){  
     carPos = -1 + WIN_WIDTH/2;  
     score = 0;  
@@ -176,9 +174,8 @@ void play(){
         eraseCar();  
         eraseEnemy(0);  
         eraseEnemy(1);   
-      //only some line 4 8492U
-      //only some line 3 salkfjwonidsaf
-      //only some line 2 awoeifpqpcinid
+      //only some line 4 8492Udapoqindkd
+      //onldwinfownipalw
           
         if( enemyY[0] == 10 )  
             if( enemyFlag[1] == 0 )  
@@ -224,6 +221,7 @@ int main()
         else if( op=='3') exit(0);  
           
     }while(1);  
+  //qopoijeifnidkls
       
     return 0;  
 }  
